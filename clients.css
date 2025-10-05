@@ -1,0 +1,76 @@
+.clients {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.client-cards {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.client-card {
+    width: 359px;
+    height: 485px;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.client-card-1 {
+    background-image: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-1.png);
+}
+
+.client-card-2 {
+    background-image: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-2.png);
+}
+
+.client-card-3 {
+    background-image: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-3.png);
+}
+
+.client-card-texts {
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.client-card-heading {
+    color: var(--color-yellow);
+}
+
+@media (max-width: 834px) {
+    .clients {
+        gap: 32px;
+    }
+
+    .client-card {
+        width: 244px;
+        height: 350px;
+        padding: 12px;
+    }
+
+    .client-card-texts {
+        gap: 4px;
+    }
+
+    .client-card-heading {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .client-card-1 {
+        background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-1-tablet.png) no-repeat center / cover;
+    }
+
+    .client-card-2 {
+        background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-2-tablet.png) no-repeat center / cover;
+    }
+
+    .client-card-3 {
+        background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-3-tablet.png) no-repeat center / cover;
+    }
+}

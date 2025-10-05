@@ -1,0 +1,181 @@
+.body-text {
+    display: inline;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.body-for-nums {
+    display: inline;
+    font-family: var(--font-family-nums);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.body-text-bold {
+    display: inline;
+    font-family: var(--font-family-text-bold);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.body-text-small {
+    font-family: var(--font-family-text);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.body-text-small-nums {
+    font-family: var(--font-family-nums);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.heading-1 {
+    font-family: var(--font-family-heading);
+    font-size: 76px;
+    line-height: 1.1;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.heading-2 {
+    font-family: var(--font-family-heading);
+    font-size: 60px;
+    line-height: 1.1;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.h2-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.heading-4 {
+    font-family: var(--font-family-heading);
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.heading-5 {
+    font-family: var(--font-family-heading);
+    font-size: 32px;
+    line-height: 1.1;
+    color: var(--color-white);
+}
+
+.heading-6 {
+    font-family: var(--font-family-heading);
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--color-white);
+}
+
+.course-level {
+    font-family: var(--font-family-heading);
+    font-size: 25px;
+    line-height: 1.5;
+    color: var(--color-yellow);
+    text-transform: uppercase;
+}
+
+.logo {
+    font-family: var(--font-family-logo);
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--color-yellow);
+}
+
+.footer-logo {
+    font-family: var(--font-family-logo);
+    font-size: 50px;
+    color: var(--color-yellow);
+    line-height: 1.2;
+}
+
+.menu-link {
+    font-family: var(--font-family-text-bold);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
+    color: var(--color-white);
+
+    &:hover {
+        color: var(--color-yellow);
+    }
+
+    &:active {
+        color: var(--color-yellow-dark);
+    }
+}
+
+.text-transfer {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-text-center {
+    text-align: center;
+}
+
+@media (max-width: 834px) {
+
+    .body-text,
+    .body-text-bold,
+    .body-for-nums {
+        font-size: var(--font-size-body-mobile);
+    }
+
+    .heading-1 {
+        font-size: 48px;
+    }
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+    .h2-center {
+        display: inline;
+        text-align: center;
+    }
+
+    .heading-4 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .heading-5 {
+        font-size: 24px;
+    }
+
+    .heading-6 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .course-level {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .heading-small {
+        font-size: 24px;
+    }
+
+    .menu-link {
+        font-size: var(--font-size-body-mobile);
+    }
+
+    .footer-logo {
+        font-size: 28px;
+    }
+}

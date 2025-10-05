@@ -1,0 +1,142 @@
+.course-conditions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 160px;
+}
+
+.condition-cards {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    left: 18px;
+}
+
+.condition-card-outline-pic,
+.condition-card-outline {
+    height: 190px;
+    width: 340px;
+}
+
+.condition-card {
+    background-color: var(--color-blue-cards);
+    padding: 32px 16px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.condition-card-1 {
+    height: 168px;
+}
+
+.condition-card-2 {
+    height: 190px;
+}
+
+.condition-texts {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.background-outline {
+    height: 170px;
+    background: none;
+    border: 2px solid var(--color-yellow);
+    border-radius: 16px;
+    position: relative;
+    left: -18px;
+}
+
+.background-outline-1 {
+    bottom: 188px;
+}
+
+.background-outline-2 {
+    bottom: 210px;
+}
+
+.condition-pic-1 {
+    width: 240px;
+    z-index: 3;
+    position: relative;
+    bottom: 360px;
+    left: 50px;
+}
+
+.condition-pic-2 {
+    width: 300px;
+    z-index: 3;
+    position: relative;
+    bottom: 390px;
+    left: 10px;
+}
+
+.condition-pic-3 {
+    width: 168px;
+    z-index: 3;
+    position: relative;
+    bottom: 324px;
+    left: 80px;
+}
+
+@media (max-width: 834px) {
+    .course-conditions {
+        gap: 110px;
+    }
+
+    .condition-cards {
+        gap: 32px;
+        left: 12px;
+    }
+
+    .condition-card-outline-pic,
+    .condition-card-outline {
+        height: 206px;
+        width: 230px;
+    }
+
+    .condition-card {
+        padding: 40px 0px;
+    }
+
+    .condition-card-1,
+    .condition-card-2 {
+        height: 206px;
+    }
+
+    .background-outline {
+        height: 206px;
+        left: -12px;
+    }
+
+    .background-outline-1,
+    .background-outline-2 {
+        bottom: 218px;
+    }
+
+    .condition-pic-1 {
+        width: 170px;
+        bottom: 310px;
+        left: 28px;
+    }
+
+    .condition-pic-2 {
+        width: 210px;
+        bottom: 340px;
+    }
+
+    .condition-pic-3 {
+        width: 125px;
+        bottom: 290px;
+        left: 50px;
+    }
+
+    .condition-text {
+        width: 200px;
+    }
+}

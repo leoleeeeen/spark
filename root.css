@@ -1,0 +1,167 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+input[type='file'] {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--color-blue-background);
+    overflow-x: hidden;
+}
+
+/* styles */
+@font-face {
+    font-family: 'Gilroy-Extrabold';
+    src: url(fonts/Gilroy-Extrabold.woff2);
+}
+
+@font-face {
+    font-family: 'Ermilov-Bold';
+    src: url(fonts/ermilov-bold.woff2);
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url(fonts/Raleway-Regular.woff2);
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(fonts/Raleway-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: url(fonts/Inter-LightBETA.woff2);
+}
+
+:root {
+    --font-family-heading: 'Ermilov-Bold';
+    --font-family-text-bold: 'Raleway-Bold';
+    --font-family-text: 'Raleway-Regular';
+    --font-family-logo: 'Gilroy-Extrabold';
+    --font-family-nums: 'Inter-Light';
+
+    --font-size-body: 20px;
+    --font-size-body-mobile: 16px;
+    --desktop-content-width: 1140px;
+    --tablet-content-width: 770px;
+
+    --color-yellow: #FDCC33;
+    --color-yellow-light: #F9E27F;
+    --color-yellow-dark: #CDA731;
+    --color-white: #ffffff;
+    --color-blue-light: #C3D1E2;
+    --color-blue-light-dark: #8D93A8;
+    --color-blue-cards: #0E2740;
+    --color-blue-background: #070B12;
+}

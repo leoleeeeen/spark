@@ -1,0 +1,118 @@
+.consultation-form {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 16px;
+    background: linear-gradient(rgb(23 75 118 /1), rgb(13 19 35 /0));
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.form-description-text-sparkle {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.form-description-text {
+    width: 868px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.form-sparkle {
+    width: 150px;
+}
+
+.form-inputs-button {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.form-inputs {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 35px;
+}
+
+.input {
+    display: flex;
+    width: 244px;
+    height: 52px;
+    margin-top: 8px;
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 12px;
+    font-size: var(--font-size-body);
+    font-family: var(--font-family-nums);
+}
+
+.link {
+    text-decoration-line: underline !important;
+    text-decoration-thickness: from-font !important;
+
+    &:hover {
+        color: var(--color-yellow);
+    }
+
+    &:active {
+        color: var(--color-yellow-dark);
+    }
+}
+
+@media (max-width: 834px) {
+    .consultation-form {
+        padding: 24px 20px;
+    }
+
+    .form-content {
+        position: relative;
+        gap: 20px;
+    }
+
+    .form-description-text {
+        width: 690px;
+        gap: 12px;
+    }
+
+    .form-sparkle {
+        width: 80px;
+        position: absolute;
+        right: 0;
+        top: -10px;
+    }
+
+    .form-inputs-button {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 36px;
+        flex: 1;
+    }
+
+    .form-inputs {
+        justify-content: space-between;
+        margin-right: 0px;
+    }
+
+    .input {
+        width: 220px;
+        height: 40px;
+        margin-top: 4px;
+        border-radius: 12px;
+        padding: 8px;
+    }
+
+    .form-link {
+        position: absolute;
+        bottom: 40px;
+    }
+}
