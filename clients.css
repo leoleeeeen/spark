@@ -21,15 +21,16 @@
 }
 
 .client-card-1 {
-    background-image: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-1.png);
+    background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-1.png) center / cover;
+
 }
 
 .client-card-2 {
-    background-image: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-2.png);
+    background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-2.png) center / cover;
 }
 
 .client-card-3 {
-    background-image: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-3.png);
+    background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-3.png) center / cover;
 }
 
 .client-card-texts {
@@ -42,7 +43,7 @@
     color: var(--color-yellow);
 }
 
-@media (max-width: 834px) {
+@media (max-width: 1190px) {
     .clients {
         gap: 32px;
     }
@@ -61,16 +62,24 @@
         font-size: 20px;
         line-height: 1.2;
     }
+}
 
-    .client-card-1 {
-        background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-1-tablet.png) no-repeat center / cover;
+@media (max-width: 795px) {
+    .clients {
+        gap: 20px;
     }
 
-    .client-card-2 {
-        background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-2-tablet.png) no-repeat center / cover;
+    .client-cards {
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
-    .client-card-3 {
-        background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-3-tablet.png) no-repeat center / cover;
+    .client-card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .client-card-heading {
+        font-size: 24px;
     }
 }

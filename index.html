@@ -21,8 +21,18 @@
 <body>
     <!-- HEADER -->
     <div class="hero-section">
+        <div class="mobile-header">
+            <img class="cross" src="img/cross.svg" alt="">
+            <nav>
+                <ul class="mobile-links">
+                    <li class="body-text-center"><a href="index.html" class="menu-link"> О нас </a></li>
+                    <li class="body-text-center"><a href="index.html" class="menu-link"> Магазин </a></li>
+                    <li class="body-text-center"><a href="index.html" class="menu-link"> Войти </a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="header-banner-content">
-            <header>
+            <header class="header-wrapper">
                 <p class="logo"> SPARK </p>
                 <nav>
                     <ul class="links">
@@ -31,16 +41,23 @@
                         <li><a href="index.html" class="menu-link"> Войти </a></li>
                     </ul>
                 </nav>
+                <img class="burger" src="img/burger.svg" alt="">
             </header>
             <!-- BANNER -->
             <section class="banner-content">
                 <div class="banner-text">
-                    <h1 class="heading-1 text-transfer"><span>Маркетинг:</span> <span>от искры — к успеху</span></h1>
-                    <p class="body-text text-transfer">
+                    <h1 class="heading-1 text-transfer mobile-heading-1"><span>Маркетинг:</span> <span>от искры — к
+                            успеху</span></h1>
+                    <p class="body-text text-transfer banner-text-description-big">
                         <span>Научитесь создавать стратегии, которые работают, и превращать идеи</span>
                         <span>в результат. Практические знания от экспертов, реальные кейсы и удобный формат обучения
                             —</span>
                         <span>все это по выгодной цене.</span>
+                    </p>
+                    <p class="body-text text-transfer banner-text-description-small">
+                        <span>Научитесь создавать стратегии, которые работают, и превращать идеи в результат.</span>
+                        <span>Практические знания от экспертов, реальные кейсы и удобный формат обучения
+                            все это по выгодной цене.</span>
                     </p>
                 </div>
                 <div class="banner-buttons-links">
@@ -86,25 +103,34 @@
             </div>
             <div class="text-boxes">
                 <div class="text-box">
-                    <p>
-                        <span class="body-text-bold">Spark</span>
-                        <span class="body-text">— это образовательная платформа, которая помогает освоить маркетинг с
-                            нуля или
-                            вывести ваши навыки на новый уровень. </br></br>
+                    <p class="about-text">
+                        <span>
+                            <span class="body-text-bold">Spark</span>
+                            <span class="body-text">— это образовательная платформа, которая помогает освоить маркетинг
+                                с
+                                нуля или
+                                вывести ваши навыки на новый уровень.
+                            </span>
+                        </span>
+                        <span class="body-text">
                             Мы предлагаем практические курсы, созданные экспертами индустрии, удобные инструменты для
                             работы
-                            и доступ к эксклюзивным материалам. </span>
+                            и доступ к эксклюзивным материалам.
+                        </span>
                     </p>
                 </div>
                 <div class="text-box">
-                    <p>
-                        <span class="body-text-bold">Наша цель</span>
-                        <span class="body-text">— сделать качественное обучение доступным каждому и помочь вам
-                            зажечь
-                            свою
-                            искру в мире маркетинга. </br></br>
+                    <p class="about-text">
+                        <span>
+                            <span class="body-text-bold">Наша цель</span>
+                            <span class="body-text">— сделать качественное обучение доступным каждому и помочь вам
+                                зажечь свою искру в мире маркетинга.
+                            </span>
+                        </span>
+                        <span class="body-text">
                             С нами вы научитесь создавать эффективные стратегии, развивать бренды и достигать реальных
-                            бизнес-результатов. </span>
+                            бизнес-результатов.
+                        </span>
                     </p>
                 </div>
                 <div class="text-box wide-box">
@@ -115,7 +141,7 @@
         </section>
         <!-- CLIENTS -->
         <section class="clients">
-            <h2 class="heading-2 h2-center">
+            <h2 class="heading-2 h2-center heading-2-small">
                 <span>ДЛЯ КОГО ПОДОЙДУТ</span>
                 <span>НАШИ ПРОДУКТЫ</span>
             </h2>
@@ -146,43 +172,45 @@
         </section>
         <!-- COURSE CONDITIONS -->
         <section class="course-conditions">
-            <h2 class="heading-2 h2-center">
+            <h2 class="heading-2 h2-center heading-2-small">
                 <span>КАК ПРОХОДЯТ</span>
                 <span>КУРСЫ</span>
             </h2>
             <div class="condition-cards">
-                <div class="condition-card-outline-pic">
-                    <div class="condition-card-outline">
-                        <div class="condition-card condition-card-1">
-                            <div class="condition-texts">
-                                <h6 class="heading-6 text-transfer body-text-center">Видеоуроки на YouTube</h6>
-                                <p class="body-text body-text-center text-transfer condition-text">
-                                    <span>Короткие, структурированные</span>
-                                    <span>и доступные <span class="body-for-nums">24/7</span></span>
-                                </p>
+                <div class="first-cards">
+                    <div class="condition-card-outline-pic">
+                        <div class="condition-card-outline">
+                            <div class="condition-card condition-card-1">
+                                <div class="condition-texts">
+                                    <h6 class="heading-6 text-transfer body-text-center">Видеоуроки на YouTube</h6>
+                                    <p class="body-text body-text-center text-transfer condition-text">
+                                        <span>Короткие, структурированные</span>
+                                        <span>и доступные <span class="body-for-nums">24/7</span></span>
+                                    </p>
+                                </div>
                             </div>
+                            <div class="background-outline background-outline-1"></div>
                         </div>
-                        <div class="background-outline background-outline-1"></div>
+                        <img src="img/youtube-conditions.svg" alt="" class="condition-pic-1" />
                     </div>
-                    <img src="img/youtube-conditions.svg" alt="" class="condition-pic-1" />
-                </div>
-                <div class="condition-card-outline-pic">
-                    <div class="condition-card-outline">
-                        <div class="condition-card condition-card-2">
-                            <div class="condition-texts">
-                                <h6 class="heading-6 text-transfer body-text-center">
-                                    <span>Практика</span>
-                                    <span>и обратная связь</span>
-                                </h6>
-                                <p class="body-text body-text-center text-transfer condition-text">
-                                    <span>Внедряйте знания сразу</span>
-                                    <span>и учитесь на своих результатах</span>
-                                </p>
+                    <div class="condition-card-outline-pic">
+                        <div class="condition-card-outline">
+                            <div class="condition-card condition-card-2">
+                                <div class="condition-texts">
+                                    <h6 class="heading-6 text-transfer body-text-center">
+                                        <span>Практика</span>
+                                        <span>и обратная связь</span>
+                                    </h6>
+                                    <p class="body-text body-text-center text-transfer condition-text">
+                                        <span>Внедряйте знания сразу</span>
+                                        <span>и учитесь на своих результатах</span>
+                                    </p>
+                                </div>
                             </div>
+                            <div class="background-outline background-outline-2"></div>
                         </div>
-                        <div class="background-outline background-outline-2"></div>
+                        <img src="img/feedback-conditions.svg" alt="" class="condition-pic-2" />
                     </div>
-                    <img src="img/feedback-conditions.svg" alt="" class="condition-pic-2" />
                 </div>
                 <div class="condition-card-outline-pic">
                     <div class="condition-card-outline">
@@ -202,7 +230,7 @@
         </section>
         <!-- POPULAR COURSES -->
         <section class="popular-courses">
-            <h2 class="heading-2 h2-center">
+            <h2 class="heading-2 h2-center heading-2-small">
                 <span>Популярные</span>
                 <span>курсы</span>
             </h2>
@@ -234,7 +262,7 @@
         </section>
         <!-- FREE COURSE -->
         <section class="free-course">
-            <h4 class="heading-4">СОМНЕВАЕШЬСЯ? ПОПРОБУЙ БЕСПЛАТНЫЙ КУРС</h4>
+            <h4 class="heading-4 heading-2-small">СОМНЕВАЕШЬСЯ? ПОПРОБУЙ БЕСПЛАТНЫЙ КУРС</h4>
             <div class="course-description">
                 <div class="free-course-pic-container">
                     <img src="img/free-course-illustration.svg" alt="" class="free-course-pic" />
@@ -250,13 +278,30 @@
                     </button>
                 </div>
             </div>
+            <div class="course-description-mobile">
+                <h5 class="heading-5 text-transfer">
+                    <span>Первые шаги</span>
+                    <span>в маркетинге: от идеи</span>
+                    <span>до результата</span>
+                </h5>
+                <div class="pic-description">
+                    <div class="free-course-pic-container">
+                        <img src="img/free-course-illustration.svg" alt="" class="free-course-pic" />
+                    </div>
+                    <p class="body-text">Научитесь понимать своих клиентов и создавать простые стратегии продвижения
+                        — всего за <span class="body-for-nums">3 </span>видеоурока!
+                    </p>
+                </div>
+                <button type="button" class="button-main-link" onclick="location.href='index.html';"> подробнее
+                </button>
+            </div>
         </section>
         <!-- CONSULTATION FORM -->
         <form class="consultation-form">
             <div class="form-content">
                 <div class="form-description-text-sparkle">
                     <div class="form-description-text">
-                        <h4 class="heading-4 heading-small">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА</h4>
+                        <h4 class="heading-4 heading-2-small heading-small">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА</h4>
                         <p class="body-text text-transfer">
                             <span>Если не можете определиться с выбором курса или продукта или хотите больше
                                 узнать</span>
@@ -287,13 +332,14 @@
                         </div>
                     </div>
                     <button type="submit" class="button-main-link">Отправить</button>
+                    <a href="index.html" class="link body-text form-link">Политика конфеденциальности</a>
                 </div>
-                <a href="index.html" class="link body-text form-link">Политика конфеденциальности</a>
+
             </div>
         </form>
     </div>
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer-wrapper">
         <div class="footer-content">
             <div class="footer-links">
                 <p class="footer-logo">SPARK</p>
@@ -344,6 +390,7 @@
             <p class="body-text-small"> © Spark, <span class="body-text-small-nums">2025</span></p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

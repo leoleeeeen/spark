@@ -1,10 +1,9 @@
-header {
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 36px;
     flex: 1;
-    z-index: 1;
 }
 
 .links {
@@ -12,8 +11,55 @@ header {
     gap: 60px;
 }
 
-@media (max-width: 834px) {
+.mobile-header {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 1190px) {
     header {
         margin-top: 40px;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+}
+
+@media (max-width: 795px) {
+    .links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 40px;
+    }
+
+    .cross {
+        position: relative;
+        float: right;
+        width: 30px;
+    }
+
+    .mobile-header {
+        background: var(--color-blue-dark);
+        height: 100%;
+        width: 100vw;
+        z-index: 2;
+        padding: 40px 20px;
+        display: none;
+        position: fixed;
+    }
+
+    .mobile-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 160px;
+        gap: 40px;
     }
 }
