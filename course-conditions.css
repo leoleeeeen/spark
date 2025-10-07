@@ -11,6 +11,12 @@
     left: 18px;
 }
 
+.first-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
 .condition-card-outline-pic,
 .condition-card-outline {
     height: 190px;
@@ -62,7 +68,7 @@
 
 .condition-pic-1 {
     width: 240px;
-    z-index: 3;
+    z-index: 1;
     position: relative;
     bottom: 360px;
     left: 50px;
@@ -70,7 +76,7 @@
 
 .condition-pic-2 {
     width: 300px;
-    z-index: 3;
+    z-index: 1;
     position: relative;
     bottom: 390px;
     left: 10px;
@@ -78,13 +84,13 @@
 
 .condition-pic-3 {
     width: 168px;
-    z-index: 3;
+    z-index: 1;
     position: relative;
     bottom: 324px;
     left: 80px;
 }
 
-@media (max-width: 834px) {
+@media (max-width: 1190px) {
     .course-conditions {
         gap: 110px;
     }
@@ -92,6 +98,10 @@
     .condition-cards {
         gap: 32px;
         left: 12px;
+    }
+
+    .first-cards {
+        gap: 32px;
     }
 
     .condition-card-outline-pic,
@@ -138,5 +148,71 @@
 
     .condition-text {
         width: 200px;
+    }
+}
+
+@media (max-width: 795px) {
+    .course-conditions {
+        gap: 100px;
+    }
+
+    .condition-cards {
+        gap: 90px;
+        position: relative;
+        flex-wrap: wrap;
+        left: 14px;
+    }
+
+    .first-cards {
+        gap: 60px;
+    }
+
+    .condition-card-outline-pic,
+    .condition-card-outline {
+        height: 170px;
+        width: 285px;
+    }
+
+    .condition-card {
+        padding: 32px 12px;
+    }
+
+    .condition-card-1 {
+        height: 140px;
+    }
+
+    .condition-card-2 {
+        height: 170px;
+    }
+
+    .condition-text {
+        width: 100%;
+    }
+
+    .background-outline-1 {
+        height: 140px;
+        bottom: 152px;
+    }
+
+    .background-outline-2 {
+        height: 170px;
+        bottom: 182px;
+    }
+
+    .condition-pic-1 {
+        bottom: 290px;
+        left: 60px;
+    }
+
+    .condition-pic-2 {
+        width: 200px;
+        bottom: 295px;
+        left: 35px;
+    }
+
+    .condition-pic-3 {
+        width: 120px;
+        bottom: 255px;
+        left: 85px;
     }
 }

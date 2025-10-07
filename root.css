@@ -155,6 +155,7 @@ body {
     --font-size-body-mobile: 16px;
     --desktop-content-width: 1140px;
     --tablet-content-width: 770px;
+    --mobile-content-width: 300px;
 
     --color-yellow: #FDCC33;
     --color-yellow-light: #F9E27F;
@@ -163,5 +164,6 @@ body {
     --color-blue-light: #C3D1E2;
     --color-blue-light-dark: #8D93A8;
     --color-blue-cards: #0E2740;
+    --color-blue-dark: #0A1422;
     --color-blue-background: #070B12;
 }

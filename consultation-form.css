@@ -32,7 +32,9 @@
 .form-inputs-button {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     flex: 1;
+    row-gap: 28px;
 }
 
 .form-inputs {
@@ -67,7 +69,7 @@
     }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 1190px) {
     .consultation-form {
         padding: 24px 20px;
     }
@@ -90,15 +92,16 @@
     }
 
     .form-inputs-button {
-        display: flex;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 36px;
-        flex: 1;
+        display: grid;
+        grid-template-areas:
+            "form-inputs form-inputs"
+            "link link"
+            ". btn";
+        gap: 8px;
     }
 
     .form-inputs {
+        grid-area: form-inputs;
         justify-content: space-between;
         margin-right: 0px;
     }
@@ -112,7 +115,45 @@
     }
 
     .form-link {
+        grid-area: link;
+    }
+}
+
+@media (max-width: 795px) {
+    .consultation-form {
+        padding: 20px 16px;
+    }
+
+    .form-content {
+        gap: 32px;
+    }
+
+    .form-description-text {
+        width: 100%;
+    }
+
+    .form-sparkle {
+        width: 80px;
         position: absolute;
-        bottom: 40px;
+        right: 0;
+        top: 200px;
+    }
+
+    .form-inputs-button {
+        display: grid;
+        grid-template-areas:
+            "form-inputs"
+            "link"
+            "btn";
+        gap: 20px;
+    }
+
+    .form-inputs {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .input {
+        width: 100%;
     }
 }
