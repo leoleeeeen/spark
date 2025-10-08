@@ -163,7 +163,9 @@
 
 @media (max-width: 795px) {
     .header-banner-content {
-        width: var(--mobile-content-width);
+        min-width: var(--mobile-content-width);
+        max-width: 765px;
+        margin-inline: 10px;
     }
 
     .banner-content {
@@ -193,16 +195,14 @@
     }
 
     .banner-sparkle-1 {
-        width: 90px;
-        top: 170px;
-        left: 210px;
+        display: none;
     }
 
     .banner-sparkle-2 {
         display: none;
     }
 
-    .mobile-heading-1 {
+    /* .mobile-heading-1 {
         width: 250px;
-    }
+    } */
 }

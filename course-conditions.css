@@ -13,7 +13,6 @@
 
 .first-cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -21,6 +20,10 @@
 .condition-card-outline {
     height: 190px;
     width: 340px;
+}
+
+.condition-card-outline-pic {
+    text-align: center;
 }
 
 .condition-card {
@@ -71,7 +74,6 @@
     z-index: 1;
     position: relative;
     bottom: 360px;
-    left: 50px;
 }
 
 .condition-pic-2 {
@@ -79,7 +81,6 @@
     z-index: 1;
     position: relative;
     bottom: 390px;
-    left: 10px;
 }
 
 .condition-pic-3 {
@@ -87,7 +88,6 @@
     z-index: 1;
     position: relative;
     bottom: 324px;
-    left: 80px;
 }
 
 @media (max-width: 1190px) {
@@ -132,7 +132,6 @@
     .condition-pic-1 {
         width: 170px;
         bottom: 310px;
-        left: 28px;
     }
 
     .condition-pic-2 {
@@ -143,7 +142,6 @@
     .condition-pic-3 {
         width: 125px;
         bottom: 290px;
-        left: 50px;
     }
 
     .condition-text {
@@ -153,24 +151,30 @@
 
 @media (max-width: 795px) {
     .course-conditions {
+        flex-direction: column;
+        flex: 1;
         gap: 100px;
     }
 
     .condition-cards {
         gap: 90px;
         position: relative;
-        flex-wrap: wrap;
+        flex-direction: column;
         left: 14px;
+        padding-right: 14px;
     }
 
     .first-cards {
+        flex-direction: column;
         gap: 60px;
     }
 
     .condition-card-outline-pic,
     .condition-card-outline {
         height: 170px;
-        width: 285px;
+        width: auto;
+        min-width: 285px;
+        max-width: 100%;
     }
 
     .condition-card {
@@ -201,18 +205,15 @@
 
     .condition-pic-1 {
         bottom: 290px;
-        left: 60px;
     }
 
     .condition-pic-2 {
         width: 200px;
         bottom: 295px;
-        left: 35px;
     }
 
     .condition-pic-3 {
         width: 120px;
         bottom: 255px;
-        left: 85px;
     }
 }

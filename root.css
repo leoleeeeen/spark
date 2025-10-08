@@ -118,6 +118,10 @@ body {
     overflow-x: hidden;
 }
 
+.disable-scroll {
+    overflow: hidden;
+}
+
 /* styles */
 @font-face {
     font-family: 'Gilroy-Extrabold';

@@ -90,22 +90,27 @@
 
 @media (max-width: 795px) {
     .popular-courses {
+        flex-direction: column;
+        flex: 1;
         gap: 20px;
     }
 
     .course-cards {
-        display: flex;
+        flex-direction: column;
         gap: 12px;
-        flex-wrap: wrap;
     }
 
     .course-card-pic {
-        width: 300px;
+        min-width: 300px;
+        max-width: 100%;
+        width: auto;
         height: 300px;
     }
 
     .course-card {
-        width: 300px;
+        min-width: 300px;
+        max-width: 100%;
+        width: auto;
         height: 300px;
         padding: 20px;
     }
@@ -113,19 +118,25 @@
     .course-pic-1 {
         width: 140px;
         bottom: 260px;
-        left: 140px;
+        right: 16px;
+        float: right;
+        left: auto;
     }
 
     .course-pic-2 {
         width: 150px;
         bottom: 230px;
-        left: 135px;
+        right: 16px;
+        float: right;
+        left: auto;
     }
 
     .course-pic-3 {
         width: 150px;
         bottom: 230px;
-        left: 137px;
+        right: 16px;
+        float: right;
+        left: auto;
     }
 
 }

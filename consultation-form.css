@@ -34,7 +34,7 @@
     align-items: flex-end;
     flex-wrap: wrap;
     flex: 1;
-    row-gap: 28px;
+    gap: 28px 0px;
 }
 
 .form-inputs {
@@ -133,10 +133,11 @@
     }
 
     .form-sparkle {
-        width: 80px;
+        display: none;
+        /* width: 80px;
         position: absolute;
         right: 0;
-        top: 200px;
+        top: 200px; */
     }
 
     .form-inputs-button {
@@ -149,7 +150,7 @@
     }
 
     .form-inputs {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 16px;
     }
 

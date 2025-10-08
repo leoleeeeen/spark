@@ -66,17 +66,24 @@
 
 @media (max-width: 795px) {
     .clients {
+        flex-direction: column;
         gap: 20px;
     }
 
     .client-cards {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 12px;
     }
 
     .client-card {
-        width: 300px;
+        max-width: 100%;
+        min-width: 300px;
+        width: auto;
         height: 300px;
+    }
+
+    .client-card-3 {
+        background: linear-gradient(rgb(0 0 0 /0), rgb(0 0 0 /0.8)), url(img/client-3.png) top / cover;
     }
 
     .client-card-heading {

@@ -47,12 +47,10 @@
 
     .mobile-header {
         background: var(--color-blue-dark);
-        height: 100%;
+        height: 100vh;
         width: 100vw;
-        z-index: 2;
         padding: 40px 20px;
         display: none;
-        position: fixed;
     }
 
     .mobile-links {
