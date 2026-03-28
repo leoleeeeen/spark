@@ -127,7 +127,7 @@
     text-align: center;
 }
 
-@media (max-width: 834px) {
+@media (max-width: 1190px) {
 
     .body-text,
     .body-text-bold,
@@ -177,5 +177,37 @@
 
     .footer-logo {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 795px) {
+    .heading-small {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .heading-1 {
+        font-size: 36px;
+    }
+
+    .heading-2 {
+        font-size: 32px;
+    }
+
+    .heading-2-small {
+        font-size: 24px;
+    }
+
+    .heading-5 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        font-size: 50px;
     }
 }
